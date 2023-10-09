@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilo7.css">
+    <script src="../js/utilidades7.js"></script>
+</head>
+<body>
+    <h1>Generador de Contratos Legales</h1>
+    <div class="container">
+        <label for="nombreCliente">Nombre del Cliente:</label>
+        <input type="text" id="nombreCliente"><br><br>
+
+        <label for="fechaInicio">Fecha de Inicio:</label>
+        <input type="date" id="fechaInicio"><br><br>
+
+        <label for="terminos">Términos y Condiciones:</label>
+        <textarea id="terminos" rows="10" cols="50"></textarea><br><br>
+
+        <button onclick="generarContrato()">Generar Contrato</button>
+
+        <pre id="contrato" style="white-space: pre-wrap;"></pre>
+    </div>
+</body>
+</html>

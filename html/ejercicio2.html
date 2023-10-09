@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generador de Tarjetas de Presentación</title>
+<link rel="stylesheet" href="../css/estilo2.css">
+<script src="../js/utilidades2.js"></script>
+</head>
+<body>
+    <h1>Generador de Tarjetas de Presentación</h1>
+    <div class="container">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre"><br><br>
+
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo"><br><br>
+
+        <label for="empresa">Empresa:</label>
+        <input type="text" id="empresa"><br><br>
+
+        <label for="contacto">Contacto:</label>
+        <input type="text" id="contacto"><br><br>
+
+        <button onclick="generarTarjeta()">Generar Tarjeta</button>
+    </div>
+
+    <div class="container" id="tarjeta" style="display: none;">
+        <h2>Tarjeta de Presentación:</h2>
+        <p><strong>Nombre:</strong> <span id="nombreTarjeta"></span></p>
+        <p><strong>Cargo:</strong> <span id="cargoTarjeta"></span></p>
+        <p><strong>Empresa:</strong> <span id="empresaTarjeta"></span></p>
+        <p><strong>Contacto:</strong> <span id="contactoTarjeta"></span></p>
+    </div>
+
+       
+</body>
+</html>

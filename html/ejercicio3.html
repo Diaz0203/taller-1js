@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilo3.css">
+    <script src="../js/utilidades3.js"></script>
+</head>
+<body>
+    <h1>Generador de Gráfico de Barras</h1>
+    <div class="container">
+        <label for="datos">Datos (separados por comas):</label>
+        <input type="text" id="datos"><br><br>
+
+        <button onclick="generarGrafico()">Generar Gráfico</button>
+    </div>
+
+    <div class="container" id="grafico" style="display: none;">
+        <h2>Gráfico de Barra:</h2>
+        <pre id="output"></pre>
+    </div>
+</body>
+</html>
